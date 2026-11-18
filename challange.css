@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background: #f3f4ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.score h3 {
+    color: #666;
+    font-size: 16px;
+}
+
+.score p {
+    color: #764ba2;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#turn {
+    color: #764ba2;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.choice {
+    background: #f3f4ff;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 105px;
+    height: 110px;
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choice span {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #444;
+    font-weight: bold;
+}
+
+.choice:hover {
+    background: #764ba2;
+    border-color: #5b3a8a;
+    transform: translateY(-7px);
+}
+
+.result-box {
+    background: #f8f8fc;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    line-height: 2;
+}
+
+.result-box p {
+    color: #666;
+}
+
+#result {
+    color: #764ba2;
+    margin-top: 10px;
+}
+
+.reset-btn {
+    background: #764ba2;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: #5b3a8a;
+    transform: scale(1.05);
+}
+
+@media (max-width: 400px) {
+    .game-container {
+        padding: 25px 15px;
+    }
+
+    .choices {
+        gap: 8px;
+    }
+
+    .choice {
+        width: 90px;
+        height: 100px;
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
